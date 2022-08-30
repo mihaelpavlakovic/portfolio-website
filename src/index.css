@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-primary
+  }
+
+  li {
+    @apply p-4 cursor-pointer;
+  }
+}
