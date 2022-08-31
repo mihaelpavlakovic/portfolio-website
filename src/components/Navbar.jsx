@@ -11,11 +11,16 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-center mt-5">
-      <div className="w-[90vw] h-[80px] z-10 bg-secondary text-white fixed drop-shadow-md rounded-md">
+      <div className="w-[90vw] h-[55px] md:h-[80px] z-10 bg-secondary text-white fixed drop-shadow-md rounded-md">
         <div className="px-2 flex justify-between items-center w-full h-full">
-          <div className="flex">
+          <Link
+            to="home"
+            smooth={true}
+            duration={500}
+            className="flex cursor-pointer"
+          >
             <h1 className="text-3xl font-bold mr-4 sm:text-4xl">Portfolio.</h1>
-          </div>
+          </Link>
           <div className="hidden md:flex pr-4">
             <ul className="hidden md:flex">
               <li className="hover:text-black">

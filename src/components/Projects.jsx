@@ -11,14 +11,14 @@ import project6 from "../assets/project6.jpg";
 const Projects = () => {
   return (
     <div name="projects" className="w-full h-full bg-primary">
-      <h2 className="py-3 text-5xl md:text-7xl font-bold flex justify-center mb-3 md:mb-10">
+      <h2 className="py-3 text-3xl md:text-7xl font-bold flex justify-center mb-3 md:mb-10">
         Projects
       </h2>
-      <p className=" text-2xl text-center mb-4 md:mb-10">
+      <p className="text-lg mx-3 md:mx-0 md:text-2xl text-center mb-4 md:mb-10">
         Some of my project I worked on in previous years.
       </p>
       <div className="w-full flex justify-center">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mx-4 md:mx-0">
           <div className="max-w-sm bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
             <a
               href="https://mihaelpavlakovic.github.io/svijet-apartmana-app/"

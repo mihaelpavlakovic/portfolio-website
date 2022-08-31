@@ -17,11 +17,11 @@ const Stack = () => {
           />
         </div>
         <div className="flex flex-col justify-center items-center md:items-start w-full px-2 py-8 order-2 md:order-2">
-          <h2 className="py-3 text-5xl md:text-7xl font-bold">Stack</h2>
-          <p className="text-xl pt-5 text-center md:text-start">
+          <h2 className="py-3 text-3xl md:text-7xl font-bold">Stack</h2>
+          <p className="text-lg md:text-xl pt-5 text-center md:text-start">
             What's my knowledge in web development?
           </p>
-          <ul className="text-xl pt-5 pl-5">
+          <ul className="text-lg md:text-xl pt-5 pl-5">
             <li className="p-2 list-disc">HTML</li>
             <li className="p-2 list-disc">CSS (Bootstrap and Tailwind)</li>
             <li className="p-2 list-disc">JavaScript</li>

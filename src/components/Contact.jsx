@@ -11,10 +11,10 @@ import {
 const Contact = () => {
   return (
     <div name="contact" className="w-full h-full bg-primary pt-[50px]">
-      <h2 className="py-3 text-5xl md:text-7xl font-bold flex justify-center mb-3 md:mb-10">
+      <h2 className="py-3 text-3xl md:text-7xl font-bold flex justify-center mb-3 md:mb-10">
         Contact Me
       </h2>
-      <p className="text-xl text-center pb-3 px-3">
+      <p className="text-lg md:text-xl mx-3 md:mx-0 text-center pb-3 px-3">
         If you have more additional questions you can reach me on the following
         platforms:
       </p>

@@ -17,12 +17,12 @@ const About = () => {
           />
         </div>
         <div className="flex flex-col justify-center items-center md:items-start w-full px-2 py-8 order-2 md:order-2">
-          <h2 className="py-3 text-5xl md:text-7xl font-bold">About me</h2>
-          <p className="text-xl pt-5 text-justify px-4 md:px-0">
+          <h2 className="py-3 text-3xl md:text-7xl font-bold">About me</h2>
+          <p className="text-lg md:text-xl pt-5 px-4 md:px-0">
             I am currently working on getting my major in Informatics. Besides
             that, I love to code and spend time around computers.
           </p>
-          <p className="text-xl pt-5 text-justify px-4 md:px-0">
+          <p className="text-lg md:text-xl pt-5 px-4 md:px-0">
             My love for coding began in high school and since then has only
             grown day by day. Part of my journey you can follow on my Instagram
             page &nbsp;
