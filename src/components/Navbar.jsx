@@ -10,120 +10,128 @@ const Navbar = () => {
   const handleClose = () => setNav(!nav);
 
   return (
-    <div className="flex justify-center mt-5">
-      <div className="w-[90vw] h-[55px] md:h-[80px] z-10 bg-secondary text-white fixed drop-shadow-md rounded-md">
-        <div className="px-2 flex justify-between items-center w-full h-full">
+    <div className="w-full h-[55px] md:h-[80px] z-10 bg-secondary text-white fixed drop-shadow-md rounded-b-md">
+      <div className="max-w-[1280px] mx-auto px-5 flex justify-between items-center h-full">
+        <Link
+          to="home"
+          smooth={true}
+          duration={500}
+          className="flex cursor-pointer hover:text-black"
+        >
+          <h1 className="text-3xl sm:text-4xl font-bold">Portfolio.</h1>
+        </Link>
+        <div className="hidden md:flex">
+          <ul className="hidden md:flex">
+            <Link
+              to="home"
+              smooth={true}
+              duration={500}
+              className="p-5 cursor-pointer hover:text-black"
+            >
+              Home
+            </Link>
+            <Link
+              to="about"
+              smooth={true}
+              offset={-100}
+              duration={500}
+              className="p-5 cursor-pointer hover:text-black"
+            >
+              About
+            </Link>
+            <Link
+              to="stack"
+              smooth={true}
+              offset={-80}
+              duration={500}
+              className="p-5 cursor-pointer hover:text-black"
+            >
+              Stack
+            </Link>
+            <Link
+              to="projects"
+              smooth={true}
+              offset={-100}
+              duration={500}
+              className="p-5 cursor-pointer hover:text-black"
+            >
+              Projects
+            </Link>
+            <Link
+              to="contact"
+              smooth={true}
+              offset={-50}
+              duration={500}
+              className="p-5 cursor-pointer hover:text-black"
+            >
+              Contact
+            </Link>
+          </ul>
+        </div>
+        <div
+          className="md:hidden mr-2 cursor-pointer hover:text-black"
+          onClick={handleClick}
+        >
+          {!nav ? <Bars3Icon className="w-5" /> : <XMarkIcon className="w-5" />}
+        </div>
+      </div>
+
+      <div className="flex justify-center text-center -mt-1">
+        <ul
+          className={
+            !nav ? "hidden" : "absolute bg-secondary w-full py-2 rounded-b-md"
+          }
+        >
           <Link
+            onClick={handleClose}
             to="home"
             smooth={true}
             duration={500}
-            className="flex cursor-pointer"
+            className="p-2 w-full hover:text-black block"
           >
-            <h1 className="text-3xl font-bold mr-4 sm:text-4xl">Portfolio.</h1>
+            Home
           </Link>
-          <div className="hidden md:flex pr-4">
-            <ul className="hidden md:flex">
-              <li className="hover:text-black">
-                <Link to="home" smooth={true} duration={500}>
-                  Home
-                </Link>
-              </li>
-              <li className="hover:text-black">
-                <Link to="about" smooth={true} offset={-100} duration={500}>
-                  About
-                </Link>
-              </li>
-              <li className="hover:text-black">
-                <Link to="stack" smooth={true} offset={-80} duration={500}>
-                  Stack
-                </Link>
-              </li>
-              <li className="hover:text-black">
-                <Link to="projects" smooth={true} offset={-100} duration={500}>
-                  Projects
-                </Link>
-              </li>
-              <li className="hover:text-black">
-                <Link to="contact" smooth={true} offset={-50} duration={500}>
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div
-            className="md:hidden mr-4 cursor-pointer hover:text-black"
-            onClick={handleClick}
+          <Link
+            onClick={handleClose}
+            to="about"
+            smooth={true}
+            offset={-80}
+            duration={500}
+            className="p-2 w-full hover:text-black block"
           >
-            {!nav ? (
-              <Bars3Icon className="w-5" />
-            ) : (
-              <XMarkIcon className="w-5" />
-            )}
-          </div>
-        </div>
-
-        <div className="flex justify-center mt-3">
-          <ul
-            className={
-              !nav ? "hidden" : "absolute bg-secondary w-full px-8 rounded-md"
-            }
+            About
+          </Link>
+          <Link
+            onClick={handleClose}
+            to="stack"
+            smooth={true}
+            offset={-80}
+            duration={500}
+            className="p-2 w-full hover:text-black block"
           >
-            <li className="border-b-2 border-zinc-300 w-full hover:text-black">
-              <Link
-                onClick={handleClose}
-                to="home"
-                smooth={true}
-                duration={500}
-              >
-                Home
-              </Link>
-            </li>
-            <li className="border-b-2 border-zinc-300 w-full hover:text-black">
-              <Link
-                onClick={handleClose}
-                to="about"
-                smooth={true}
-                offset={-200}
-                duration={500}
-              >
-                About
-              </Link>
-            </li>
-            <li className="border-b-2 border-zinc-300 w-full hover:text-black">
-              <Link
-                onClick={handleClose}
-                to="stack"
-                smooth={true}
-                offset={-50}
-                duration={500}
-              >
-                Stack
-              </Link>
-            </li>
-            <li className="border-b-2 border-zinc-300 w-full hover:text-black">
-              <Link
-                onClick={handleClose}
-                to="projects"
-                smooth={true}
-                offset={-100}
-                duration={500}
-              >
-                Projects
-              </Link>
-            </li>
-            <li className="hover:text-black">
-              <Link
-                onClick={handleClose}
-                to="contact"
-                smooth={true}
-                offset={-50}
-                duration={500}
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </div>
+            Stack
+          </Link>
+          <Link
+            onClick={handleClose}
+            to="projects"
+            smooth={true}
+            offset={-80}
+            duration={500}
+            className="p-2 w-full hover:text-black block"
+          >
+            Projects
+          </Link>
+          <Link
+            onClick={handleClose}
+            to="contact"
+            smooth={true}
+            offset={-80}
+            duration={500}
+            className="p-2 w-full hover:text-black block"
+          >
+            Contact
+          </Link>
+        </ul>
       </div>
     </div>
   );
